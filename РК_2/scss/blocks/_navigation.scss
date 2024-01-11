@@ -1,0 +1,20 @@
+@use "../utils/variables";
+
+.navigation__list {
+    list-style: none;
+
+    display: flex;
+}
+
+.navigation__item {
+    margin-right: 3.2rem;
+}
+
+.navigation__link {
+    color: variables.$white;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 127.778%;
+    text-decoration: none;
+}

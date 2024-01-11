@@ -1,0 +1,58 @@
+@use "../utils/variables";
+@use "../utils/mixins";
+
+.header {
+    background-color: variables.$black;
+}
+
+.header__wrapper {
+    @include mixins.wrapper-mb;
+    padding: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+
+    @include mixins.viewport-dt {
+        @include mixins.wrapper-dt;
+        padding: 0.7rem 0;
+    }
+}
+
+.header__functions-wrapper {
+    margin: 0.5rem 0;
+    display: flex;
+
+    @include mixins.viewport-dt {
+        margin-left: auto;
+        margin-right: 2.4rem;
+    }
+}
+
+.header__button {
+    background: none;
+    border: none;
+
+    width: 2.4rem;
+    height: 2.4rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: variables.$white;
+    cursor: pointer;
+    margin-right: 0.8rem;
+
+    &--burger {
+        @include mixins.viewport-dt {
+            display: none;
+        }
+    }
+}
+
+.header__navigation {
+    display: none;
+
+    @include mixins.viewport-dt {
+        display: block;
+        margin-top: 0.3rem;
+        order: -1;
+    }
+}

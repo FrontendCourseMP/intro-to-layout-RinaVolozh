@@ -1,0 +1,19 @@
+@use "../utils/variables";
+@use "../utils/mixins";
+
+.header {
+    position: fixed;
+    width: 100%;
+}
+
+.header__wrapper {
+    @include mixins.wrapper-mb;
+    padding: 2.4rem 0 5.2rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__burger {
+    background: none;
+    border: none;
+}

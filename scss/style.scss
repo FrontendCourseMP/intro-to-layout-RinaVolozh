@@ -1,1 +1,11 @@
+@use "./utils/normalize";
+@use "./utils/reset";
+@use "./utils/visually-hidden";
 @use "./utils/fonts";
+@use "./utils/general";
+
+@use "./blocks/header";
+@use "./blocks/logo";
+@use "./blocks/hero";
+@use "./blocks/contacts";
+@use "./blocks/about"

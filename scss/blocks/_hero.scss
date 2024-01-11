@@ -1,0 +1,48 @@
+@use "../utils/mixins";
+@use "../utils/variables";
+
+.hero {
+    background-image: url("../assets/background_1.png");
+}
+
+.hero__wrapper {
+    @include mixins.wrapper-mb;
+    padding-top: 12.4rem;
+    padding-bottom: 8rem;
+}
+
+.hero__title {
+    margin-top: 4.3rem;
+    color: variables.$white;
+    text-shadow: 0 0 1.2rem rgba(0, 0, 0, 0.25);
+    font-size: 3.2rem;
+    font-weight: 700;
+    display: block;
+
+    &--small {
+        margin: 0;
+        font-size: 1.6rem;
+        font-weight: 500;
+    }
+}
+
+.hero__image {
+    margin-top: 4.2rem;
+    width: 31.7rem;
+    height: 21.9rem;
+}
+
+.hero__callback {
+    text-decoration: none;
+
+    margin: 0 auto;
+    border-radius: 0.4rem;
+    color: variables.$white;  
+    background-color: variables.$orange;
+    box-shadow: 0 0.4rem 0.4rem 0 rgba(0, 0, 0, 0.25);
+    display: block;
+    padding: 1.2rem 4rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    max-width: 20.7rem;
+}

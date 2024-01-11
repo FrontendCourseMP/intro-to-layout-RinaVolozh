@@ -1,0 +1,45 @@
+@use "../utils/variables";
+@use "../utils/mixins";
+
+.contacts__wrapper {
+    @include mixins.wrapper-mb;
+    padding: 3.6rem 0 4rem 0;
+}
+
+.contacts__list {
+    list-style: none;
+}
+
+.contacts__item {
+    max-width: 20.5rem;
+    margin-left: auto;
+    margin-right: 1.9rem;
+
+    &:not(:first-child) {
+        margin-top: 2.9rem;
+    }
+}
+
+.contacts__subtitle {
+    color: variables.$blue;
+    font-size: 1.6rem;
+    font-weight: 900;
+}
+
+.contacts__link {
+    text-decoration: none;
+
+    color: variables.$blue;
+    font-size: 1.6rem;
+    font-weight: 500;
+
+    &:first-of-type {
+        margin-top: 0.6rem;
+    }
+}
+
+.contacts__text {
+    color: variables.$blue;
+    font-size: 1.6rem;
+    font-weight: 500;
+}

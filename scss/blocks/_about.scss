@@ -1,0 +1,11 @@
+@use "../utils/variables";
+@use "../utils/mixins";
+
+.about__wrapper {
+    @include mixins.wrapper-mb;
+    padding: 4rem 0 4rem 0;
+}
+
+.about__title {
+    
+}

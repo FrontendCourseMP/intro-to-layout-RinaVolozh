@@ -1,0 +1,11 @@
+@use "../utils/variables";
+@use "../utils/mixins";
+
+.catalog__wrapper {
+    @include mixins.wrapper-mb;
+    padding: 4.8rem 0 6.7rem 0;
+}
+
+.catalog__title {
+    @include mixins.title;
+}

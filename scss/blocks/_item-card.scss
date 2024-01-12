@@ -1,0 +1,25 @@
+@use "../utils/mixins";
+@use "../utils/variables";
+
+.item-card {
+    @include mixins.wrapper-mb;
+    padding: 4.8rem 0 4.5rem 0;
+}
+
+.item-card__title {
+    @include mixins.subtitle;
+    margin-top: 4.8rem;
+}
+
+.item-card__text {
+    @include mixins.text;
+    margin-top: 1.6rem;
+
+    &:first-child {
+        margin-top: 2.6rem;
+    }
+}
+
+.item-card__slider {
+    margin-top: 4rem;
+}

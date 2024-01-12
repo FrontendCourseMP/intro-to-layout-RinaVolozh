@@ -1,0 +1,21 @@
+@use "../utils/mixins";
+@use "../utils/variables";
+
+.benefits {
+    background-image: url("../assets/backaground__blue.jpg")
+                      url("../assets/blue-cutter.svg");
+    background-position: top, 
+                         bottom;
+    background-color: variables.$blue;
+}
+
+.benefits__wrapper {
+    @include mixins.wrapper-mb;
+    padding: 4rem 0 0 0;
+    position: relative;
+}
+
+.benefits__title {
+    @include mixins.title;
+    color: variables.$white;
+}

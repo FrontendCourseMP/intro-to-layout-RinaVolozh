@@ -179,7 +179,7 @@
                         </h3>
                     </li>
                 </ul>
-                <img src="./assets/background_1.png" alt="" class="about__image">
+                <img src="./assets/background_2.jpg" alt="" class="about__image">
             </div>
         </section>
         <section class="main__catalog catalog">
@@ -189,31 +189,31 @@
             <ul class="catalog__select select">
                 <li class="select__item">
                     <label class="select__label">
-                        <input type="radio" name="stuff" class="select__input">
+                        <input type="radio" name="stuff" class="visually-hidden select__radio" checked>
                         <span class="select__description">BA100K D193</span>
                     </label>
                 </li>
                 <li class="select__item">
                     <label class="select__label">
-                        <input type="radio" name="stuff" class="select__input">
+                        <input type="radio" name="stuff" class="visually-hidden select__radio">
                         <span class="select__description">BA150E D285</span>
                     </label>
                 </li>
                 <li class="select__item">
                     <label class="select__label">
-                        <input type="radio" name="stuff" class="select__input">
+                        <input type="radio" name="stuff" class="visually-hidden select__radio">
                         <span class="select__description">BA180E D328</span>
                     </label>
                 </li>
                 <li class="select__item">
                     <label class="select__label">
-                        <input type="radio" name="stuff" class="select__input">
+                        <input type="radio" name="stuff" class="visually-hidden select__radio">
                         <span class="select__description">BA300E D328</span>
                     </label>
                 </li>
                 <li class="select__item">
                     <label class="select__label">
-                        <input type="radio" name="stuff" class="select__input">
+                        <input type="radio" name="stuff" class="visually-hidden select__radio">
                         <span class="select__description">PT150 D155</span>
                     </label>
                 </li>
@@ -226,32 +226,35 @@
                 <p class="item-card__text">Данный насос имеет компактный корпус и низкий уровень шума, благодаря чему
                     его можно использовать даже в густонаселенных районах крупных городов.</p>
                 <div class="item-card__slider slider">
-                    <div class="slider__display">
-                        <img src="./assets/Bump_2@1x.jpg" alt="" class="slider__image">
-                        <img src="" alt="" class="slider__image">
-                        <img src="" alt="" class="slider__image">
-                    </div>
                     <div class="slider__controls controls">
                         <ul class="controls__list">
                             <li class="controls__item">
                                 <label class="controls__label">
-                                    <input type="radio" name="" class="controls__input">
+                                    <input type="radio" name="slide" class="visually-hidden controls__input controls__input--1" checked>
                                     <span class="visually-hidden">Переключить на изображение 1</span>
+                                    <span class="controls__visible-selector"></span>
                                 </label>
                             </li>
                             <li class="controls__item">
                                 <label class="controls__label">
-                                    <input type="radio" name="" class="controls__input">
+                                    <input type="radio" name="slide" class="visually-hidden controls__input controls__input--2">
                                     <span class="visually-hidden">Переключить на изображение 2</span>
+                                    <span class="controls__visible-selector"></span>
                                 </label>
                             </li>
                             <li class="controls__item">
                                 <label class="controls__label">
-                                    <input type="radio" name="" class="controls__input">
+                                    <input type="radio" name="slide" class="visually-hidden controls__input controls__input--3">
                                     <span class="visually-hidden">Переключить на изображение 3</span>
+                                    <span class="controls__visible-selector"></span>
                                 </label>
                             </li>
                         </ul>
+                    </div>
+                    <div class="slider__display">
+                        <img src="./assets/Bump_2@1x.jpg" alt="" class="slider__image slider__image--1">
+                        <img src="./assets/Bump_2@1x.jpg" alt="" class="slider__image slider__image--2">
+                        <img src="./assets/Bump_2@1x.jpg" alt="" class="slider__image slider__image--3">
                     </div>
                 </div>
             </div>

@@ -1,0 +1,31 @@
+@use "../utils/variables";
+
+.select {
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    padding-left: calc(50% - 17.1rem);
+    overflow-x: scroll;
+    scrollbar-width: none;
+    background-color: variables.$greysoft;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.select__description {
+    display: block;
+    padding: 1.6rem 1.8rem;
+    background-color: variables.$greysoft;
+    color: variables.$blue;
+    font-size: 1.6rem;
+    font-weight: 900;
+    transition: color 0.5s, 
+                background-color 0.8s;
+}
+
+.select__radio:checked + .select__description {
+    background-color: variables.$orange;
+    color: variables.$white;
+}

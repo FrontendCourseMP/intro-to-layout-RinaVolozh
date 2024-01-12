@@ -11,6 +11,39 @@
     max-width: variables.$desktop-size;
 }
 
+@mixin title {
+    color: variables.$blue;
+    text-align: center;
+    font-size: 3.6rem;
+    font-weight: 700;
+    position: relative;
+
+    &::before {
+        content: "";
+        display: block;
+        width: 10rem;
+        height: 0.3rem;
+        
+        position: absolute;
+        bottom: -3.2rem;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: variables.$orange;
+    }
+}
+
+@mixin subtitle {
+    color: variables.$blue;
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+@mixin text {
+    color: variables.$blue;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
 @mixin viewport-dt {
     @media screen and (min-width: variables.$desktop-size) {
         @content;

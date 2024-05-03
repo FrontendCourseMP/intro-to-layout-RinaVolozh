@@ -1,0 +1,32 @@
+@use "../utils/variables";
+@use "../utils/mixins";
+
+.clients {
+    background-color: variables.$white;
+}
+
+.clients__wrapper {
+    @include mixins.wrapper-mb;
+    padding-top: 12.4rem;
+    padding-bottom: 8rem;
+}
+
+.clients__title {
+    @include mixins.title;
+}
+
+.clients__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5.6rem;
+}
+
+.clients__item {
+    
+}
+
+#clients {
+    padding-top: 7.5rem;
+  }

@@ -1,0 +1,69 @@
+@use "../utils/variables";
+@use "../utils/mixins";
+
+.callback {
+    background-image:  url("../assets/background_cb.jpeg");
+    background-repeat: no-repeat;
+}
+
+.callback__wrapper {
+    @include mixins.wrapper-mb;
+    padding-top: 12.4rem;
+    padding-bottom: 8rem;
+}
+
+.callback__title {
+    @include mixins.title;
+    color: variables.$white;
+}
+
+.callback__form {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    margin-top: 5.3rem;
+    margin-bottom: 0.8rem;
+}
+
+.callback__label {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 0.4rem;
+}
+
+.callback__description {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: normal;
+    color: variables.$white;
+}
+
+.callback__text-input {
+    width: 34.2rem;
+    height: 4.3rem;
+    gap: 1rem;
+    border: none;
+    border-radius: 0.4rem;
+}
+
+.callback__button {
+    background-color: variables.$orange;
+    border: none;
+    border-radius: 0.4rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: normal;
+    color: variables.$white;
+    width: 20.7rem;
+    height: 4.3rem;
+    margin-left: 6rem;
+    margin-top: 2.8rem;
+}
+
+.callback__text {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: normal;
+    color: variables.$white;
+}

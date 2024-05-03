@@ -1,0 +1,22 @@
+@use "../utils/variables";
+@use "../utils/mixins";
+
+.references {
+    background-image: url("../assets/background_blue_ft.jpg");
+    background-repeat: no-repeat;
+    background-size: 39.2rem 49.1rem;
+    background-position-x: 50.5%;
+    background-position-y: 14%;
+    background-color: variables.$blue;
+}
+
+.references__wrapper {
+    @include mixins.wrapper-mb;
+    padding-top: 12.4rem;
+    padding-bottom: 8rem;
+}
+
+.references__title {
+    @include mixins.title;
+    color: variables.$white;
+}

@@ -1,0 +1,32 @@
+@use "../utils/variables";
+@use "../utils/mixins";
+
+.places {
+    background-color: variables.$white;
+}
+
+.places__wrapper {
+    @include mixins.wrapper-mb;
+    padding-top: 12.4rem;
+    padding-bottom: 8rem;
+}
+
+.places__title {
+    @include mixins.title;
+}
+
+.places__map {
+    width: 36.2rem;
+    height: 18.6819rem;
+    padding-right: 1rem;
+    margin-top: 7.3rem;
+}
+
+.places__list {
+    list-style-type: disc;
+    color: variables.$blue;
+    font-size: 1.6rem;
+    font-weight: 500;
+    column-count: 2;
+    padding-top: 2rem
+}

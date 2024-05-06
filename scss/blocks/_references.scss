@@ -4,19 +4,118 @@
 .references {
     background-image: url("../assets/background_blue_ft.jpg");
     background-repeat: no-repeat;
-    background-size: 39.2rem 49.1rem;
-    background-position-x: 50.5%;
-    background-position-y: 14%;
-    background-color: variables.$blue;
 }
 
 .references__wrapper {
     @include mixins.wrapper-mb;
-    padding-top: 12.4rem;
-    padding-bottom: 8rem;
+    padding-top: 4rem;
 }
 
 .references__title {
     @include mixins.title;
     color: variables.$white;
+}
+
+.references__largebox {
+
+}
+
+.references__orangebox {
+    background-color: variables.$orange;
+    width: 34.2rem;
+    height: 32.5rem;
+    padding-left: 3.2rem;
+    padding-top: 3.2rem;
+    padding-bottom: 3.2rem;
+    margin-left: 2.5rem;
+    margin-top: 6.7rem;
+}
+
+.references__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.references__item {
+    max-width: 20.5rem;
+}
+
+.references__subtitle {
+    color: variables.$white;
+    font-size: 1.6rem;
+    font-weight: 900;
+    margin-bottom: 0.7rem;
+}
+
+.references__link {
+    text-decoration: none;
+
+    color: variables.$white;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.2;
+    
+}
+
+.references__text {
+    color: variables.$white;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.references__image {
+    margin-bottom: 1.2rem;
+}
+
+.references__greybox {
+    background-color: variables.$greyhard;
+    width: 34.2rem;
+    height: 11.2rem;
+    padding: 3.2rem 3.2rem 3.2rem 3.2rem;
+    margin-left: 2.5rem;
+    margin-top: 0.4rem;
+    margin-bottom: 4rem;
+}
+
+.references__gbtext {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: variables.$white;
+    line-height: 1.2;
+}
+
+.references__callback {
+    background-color: variables.$blue;
+}
+
+.callback__intro {
+    color: variables.$white;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-left: 2.4rem;
+    margin-right: 2.4rem;
+    margin-bottom: -2.3rem;
+}
+
+.callback__textarea {
+    width: 34.2rem;
+    margin-right: 2.4rem;
+    border-radius: 0.4rem;
+    border: none;
+}
+
+.callback__button2 {
+    background-color: variables.$orange;
+    border: none;
+    border-radius: 0.4rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: normal;
+    color: variables.$white;
+    width: 16.1rem;
+    height: 4.3rem;
+    margin-right: 7rem;
 }

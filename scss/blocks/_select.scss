@@ -14,6 +14,10 @@
     }
 }
 
+.select__item:nth-child(4){
+    display: none;
+}
+
 .select__description {
     display: block;
     padding: 1.6rem 1.8rem;

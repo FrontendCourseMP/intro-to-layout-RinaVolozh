@@ -7,7 +7,6 @@
     background-repeat: no-repeat;
     background-position-x: 50.5%;
     background-position-y: -3%;
-    background-color: variables.$blue;
 }
 
 .benefits__wrapper {
@@ -42,11 +41,13 @@
     gap: 2.4rem;
     padding-right: 2.4rem;
     padding-left: 2.4rem;
+    background-image: url("../assets/benefits_bgr.svg");
+    background-repeat: no-repeat;
+    background-position-y: 71%;
 }
 
 .benefits__item {
-    width: 100%;
-    padding: 2.4rem;
+    padding: 3.2rem;
     border-radius: 0.8rem;
     background-color: variables.$white;
 }
@@ -75,4 +76,10 @@
     width: 14.4rem;
     height: 9rem;
     margin-bottom: 4rem;
+}
+
+.benefits__graphic {
+    position: relative;
+    z-index: -1;
+    margin-top: -8rem;
 }

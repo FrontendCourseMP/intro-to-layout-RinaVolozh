@@ -18,7 +18,9 @@
     color: variables.$blue;
     font-size: 1.6rem;
     font-weight: 400;
-    margin-top: 2.7rem;    
+    margin-top: 2.7rem;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;    
     
     &:first-of-type {
         margin-top: 6.7rem;
@@ -39,14 +41,11 @@
 
 .about__number {
     margin-bottom: 1.2rem;
+    margin-right: 4.4rem;
 }
 
 .about__subtitle {
     color: variables.$blue;
     font-size: 1.6rem;
     font-weight: 900;
-}
-
-.about__image {
-    
 }

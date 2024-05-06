@@ -1,0 +1,31 @@
+@use "../utils/variables";
+@use "../utils/mixins";
+
+.footer {
+    background-color: variables.$blue;
+}
+
+.footer__wrapper {
+    @include mixins.wrapper-mb;
+}
+
+.footer__dates {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: variables.$greysoft;
+    margin-left: 2.4rem;
+    margin-top: 2rem;
+
+}
+
+.footer__img {
+    margin-left: 2.4rem;
+    margin-right: 2.4rem;
+    margin-top: 4rem;
+}
+
+.logo__image {
+    width: 10.1rem;
+    margin-bottom: 3.6rem;
+    margin-left: 26.5rem;
+}

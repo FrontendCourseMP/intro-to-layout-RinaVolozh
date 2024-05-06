@@ -8,7 +8,7 @@
 
 .callback__wrapper {
     @include mixins.wrapper-mb;
-    padding-top: 12.4rem;
+    padding-top: 4rem;
     padding-bottom: 8rem;
 }
 
@@ -23,6 +23,7 @@
     gap: 2.4rem;
     margin-top: 5.3rem;
     margin-bottom: 0.8rem;
+    margin-left: 2.5rem;
 }
 
 .callback__label {
@@ -57,13 +58,13 @@
     color: variables.$white;
     width: 20.7rem;
     height: 4.3rem;
-    margin-left: 6rem;
+    margin-left: 6.8rem;
     margin-top: 2.8rem;
 }
 
 .callback__text {
     font-size: 1.4rem;
     font-weight: 400;
-    line-height: normal;
     color: variables.$white;
+    margin-right: 2.5rem;
 }

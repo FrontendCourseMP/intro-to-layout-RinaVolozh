@@ -59,8 +59,11 @@
     }
 
     a[class*="header__link"]:hover {
-        border-bottom: 0.3rem solid;
-        border-color: variables.$orange;
+        text-decoration-line: underline;
+        text-underline-offset: 1rem;
+        text-decoration-thickness: 0.3rem;
+        text-decoration-style: solid;
+        text-decoration-color: variables.$orange;
     }
 
     #number {

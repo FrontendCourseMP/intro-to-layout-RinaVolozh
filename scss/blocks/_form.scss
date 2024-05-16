@@ -1,0 +1,138 @@
+@use "../utils/variables";
+@use "../utils/mixins";
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+fieldset {
+    display: block;
+    margin-inline-start: 0.2rem;
+    margin-inline-end: 0.2rem;
+    padding-block-start: 0.35em;
+    padding-inline-start: 0.75em;
+    padding-inline-end: 0.75em;
+    padding-block-end: 0.625em;
+    min-inline-size: min-content;
+    border-width: 0.2rem;
+    border-style: groove;
+    border-color:  variables.$orange;
+    border-image: initial;
+}
+
+form {
+    margin: 20rem 30rem 10rem 30rem;
+    font-size: 2.2rem;
+    font-weight: 500;
+}
+
+.form_pl {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.form_text {
+    color: variables.$blue;
+}
+
+.button1 {
+    padding: 2rem;
+    width: 49%;
+    margin: 0;
+    background: variables.$blue;
+    color: variables.$white;
+    border-radius: 1.2rem;
+    border-color: variables.$blue;
+}
+
+.button2 {
+    padding: 2rem;
+    width: 49%;
+    margin: 0;
+    background: variables.$orange;
+    color: variables.$white;
+    border-radius: 1.2rem;
+    border-color: variables.$orange;
+}
+
+input[required]+label {
+    color: variables.$orange;
+}
+
+input[type="radio"]:focus+label {
+    font-weight: 700;
+}
+
+input:not([type="radio"]),
+select {
+    padding: 0.5rem
+}
+
+input:focus+label {
+    color: variables.$orange !important;
+    border-radius: 0.4rem;
+    transition: border 300ms;
+}
+
+.form2 {
+    margin: 10rem 30rem;
+    text-align: center;
+    font-size: 2.6rem;
+}
+
+input:focus+label {
+    transition: transform 300ms;
+}
+
+dt::first-letter {
+    font-size: 3rem;
+    color: variables.$orange;
+    font-weight: 700;
+}
+
+dd::after {
+    content: "🛈";
+}
+
+main form:last-of-type ul {
+    display: flex;
+    flex-basis: fill;
+    flex-wrap: wrap;
+    max-width: 50rem;
+    margin: 10rem auto;
+}
+
+main form:last-of-type li {
+    display: flex;
+    justify-content: space-between;
+}
+
+li {
+    width: 100%;
+}
+
+main form:last-of-type li:nth-of-type(even) {
+    color: variables.$blue;
+}
+
+main form:last-of-type li:nth-of-type(odd) {
+    color: variables.$orange;
+}
+
+main form:last-of-type input:checked+label {
+    text-decoration: line-through;
+}
+
+.footer__logo2:hover {
+    transform: rotate(30deg) scale(1.5) skew(20deg);
+    transition: transform 300ms;
+}
+
+.footer__logo2 {
+    width: 16.9rem;
+    margin-left: 139rem;
+    margin-bottom: 3rem;
+}

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -481,8 +482,11 @@ body {
     white-space: nowrap;
   }
   a[class*=header__link]:hover {
-    border-bottom: 0.3rem solid;
-    border-color: #F9572B;
+    text-decoration-line: underline;
+    text-underline-offset: 1rem;
+    text-decoration-thickness: 0.3rem;
+    text-decoration-style: solid;
+    text-decoration-color: #F9572B;
   }
   #number {
     color: #F9572B;
@@ -555,6 +559,10 @@ body {
 }
 
 .circler {
+  display: none;
+}
+
+.hero__slider {
   display: none;
 }
 
@@ -1584,10 +1592,9 @@ body {
 }
 
 .places__graphic {
-  width: 50.4rem;
+  width: 39rem;
   position: absolute;
-  left: -4rem;
-  margin-top: -10rem;
+  margin-top: -8.2rem;
 }
 
 .places__mapdt {
@@ -2070,4 +2077,142 @@ main {
   font-weight: 600;
   background-color: transparent;
   color: #1A4D70;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+fieldset {
+  display: block;
+  margin-inline-start: 0.2rem;
+  margin-inline-end: 0.2rem;
+  padding-block-start: 0.35em;
+  padding-inline-start: 0.75em;
+  padding-inline-end: 0.75em;
+  padding-block-end: 0.625em;
+  min-inline-size: -moz-min-content;
+  min-inline-size: min-content;
+  border-width: 0.2rem;
+  border-style: groove;
+  border-color: #F9572B;
+  -o-border-image: initial;
+     border-image: initial;
+}
+
+form {
+  margin: 20rem 30rem 10rem 30rem;
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+
+.form_pl {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.form_text {
+  color: #1A4D70;
+}
+
+.button1 {
+  padding: 2rem;
+  width: 49%;
+  margin: 0;
+  background: #1A4D70;
+  color: #FFFFFF;
+  border-radius: 1.2rem;
+  border-color: #1A4D70;
+}
+
+.button2 {
+  padding: 2rem;
+  width: 49%;
+  margin: 0;
+  background: #F9572B;
+  color: #FFFFFF;
+  border-radius: 1.2rem;
+  border-color: #F9572B;
+}
+
+input[required] + label {
+  color: #F9572B;
+}
+
+input[type=radio]:focus + label {
+  font-weight: 700;
+}
+
+input:not([type=radio]),
+select {
+  padding: 0.5rem;
+}
+
+input:focus + label {
+  color: #F9572B !important;
+  border-radius: 0.4rem;
+  transition: border 300ms;
+}
+
+.form2 {
+  margin: 10rem 30rem;
+  text-align: center;
+  font-size: 2.6rem;
+}
+
+input:focus + label {
+  transition: transform 300ms;
+}
+
+dt::first-letter {
+  font-size: 3rem;
+  color: #F9572B;
+  font-weight: 700;
+}
+
+dd::after {
+  content: "🛈";
+}
+
+main form:last-of-type ul {
+  display: flex;
+  flex-basis: fill;
+  flex-wrap: wrap;
+  max-width: 50rem;
+  margin: 10rem auto;
+}
+
+main form:last-of-type li {
+  display: flex;
+  justify-content: space-between;
+}
+
+li {
+  width: 100%;
+}
+
+main form:last-of-type li:nth-of-type(even) {
+  color: #1A4D70;
+}
+
+main form:last-of-type li:nth-of-type(odd) {
+  color: #F9572B;
+}
+
+main form:last-of-type input:checked + label {
+  text-decoration: line-through;
+}
+
+.footer__logo2:hover {
+  transform: rotate(30deg) scale(1.5) skew(20deg);
+  transition: transform 300ms;
+}
+
+.footer__logo2 {
+  width: 16.9rem;
+  margin-left: 139rem;
+  margin-bottom: 3rem;
 }/*# sourceMappingURL=style.css.map */

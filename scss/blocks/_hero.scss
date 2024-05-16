@@ -58,6 +58,10 @@
     display: none;
 }
 
+.hero__slider {
+        display: none;
+}
+
 @media (min-width: 39.2rem) and (max-width: 192rem){
     .hero {
         background-image: url("../assets/background_1.png");

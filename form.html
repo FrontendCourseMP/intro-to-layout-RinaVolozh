@@ -92,14 +92,233 @@
         </div>
     </header>
     <main>
-        
+        <form method="POST" action="//httpbin.org/post">
+            <fieldset>
+                <legend class="form_text">Регистрация нового пользователя</legend>
+                <fieldset>
+                    <legend class="form_text">Личные данные</legend>
+                    <span class="form_text">Ваш Пол:</span>
+                    <input type="radio" name="sex" id="woman" value="woman" />
+                    <label for="woman" class="form_text">
+                        Женский
+                    </label>
+                    <input type="radio" name="sex" id="man" value="man" />
+                    <label for="man" class="form_text">
+                        Мужской
+                    </label>
+                    <div class="form_pl">
+                        <input required type="text" id="name" placeholder="Имя" />
+                        <label for="name">Имя</label>
+                    </div>
+                    <div class="form_pl">
+                        <input type="date" name="birth" id="birth" class="form_text" />
+                        <label for="birth" class="form_text">Дата рождения</label>
+                    </div>
+                    <div class="form_pl">
+                        <input maxlength="50" minlength="8" required type="password" name="password" id="password" />
+                        <label for="password">Введите пароль (от 8 до 50 символов)</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend class="form_text">Контактные данные</legend>
+                    <div class="form_pl">
+                        <input required type="email" name="email" id="email" placeholder="mail@example.ru" /><label
+                            for="email">Введите email</label>
+                    </div>
+                    <div class="form_pl">
+                        <input placeholder="+7 (999) 999-99-99" maxlength="14" minlength="10" type="tel" name="phone"
+                            id="phone" />
+                        <label for="phone" class="form_text">Введите номер телефона</label>
+                    </div>
+                    <div class="form_pl">
+                        <select name="datetime" id="daytime" class="form_text">
+                            <option value="1">Утро</option>
+                            <option selected value="4">День</option>
+                            <option value="2">Вечер</option>
+                            <option value="3">Ночь</option>
+                        </select>
+                        <span class="form_text">Удобный интервал для связи</span>
+                    </div>
+                </fieldset>
+                <div class="form_pl">
+                    <button class="button1" type="reset">Сбросить</button>
+                    <button class="button2" type="submit">Отправить</button>
+                </div>
+            </fieldset>
+        </form>
+        <form class="form2" action="//httpbin.org/post">
+            <dl class="form_text">
+                <dt>Псевдоэлемент</dt>
+                <dd>
+                    Это ключевое слово, добавляемое к селектору, которое позволяет стилизовать определённую часть выбранного элемента.
+                </dd>
+                <dt>Псевдокласс</dt>
+                <dd>
+                     Это селектор, который выбирает элементы, находящиеся в специфическом состоянии, например, они являются первым элементом своего типа, или на них наведён указатель мыши.
+                </dd>
+            </dl>
+            <ul>
+                <li>
+                    <input id="9801" type="checkbox" /><label for="9801">:active</label>
+                </li>
+                <li>
+                    <input id="9802" type="checkbox" /><label for="9802">:any</label>
+                </li>
+                <li>
+                    <input id="9803" type="checkbox" /><label for="9803">:any-link</label>
+                </li>
+                <li>
+                    <input checked id="9804" type="checkbox" /><label for="9804">:checked</label>
+                </li>
+                <li>
+                    <input id="9805" type="checkbox" /><label for="9805">:default</label>
+                </li>
+                <li>
+                    <input id="9806" type="checkbox" /><label for="9806">:defined</label>
+                </li>
+                <li>
+                    <input id="9807" type="checkbox" /><label for="9807">:dir()</label>
+                </li>
+                <li>
+                    <input id="9808" type="checkbox" /><label for="9808">:disabled</label>
+                </li>
+                <li>
+                    <input id="9809" type="checkbox" /><label for="9809">:empty</label>
+                </li>
+                <li>
+                    <input id="98010" type="checkbox" /><label for="98010">:enabled</label>
+                </li>
+                <li>
+                    <input id="98011" type="checkbox" /><label for="98011">:first</label>
+                </li>
+                <li>
+                    <input checked id="98012" type="checkbox" /><label for="98012">:first-child</label>
+                </li>
+                <li>
+                    <input checked id="98013" type="checkbox" /><label for="98013">:first-of-type</label>
+                </li>
+                <li>
+                    <input id="98014" type="checkbox" /><label for="98014">:fullscreen</label>
+                </li>
+                <li>
+                    <input checked id="98015" type="checkbox" /><label for="98015">:focus</label>
+                </li>
+                <li>
+                    <input checked id="98016" type="checkbox" /><label for="98016">:hover</label>
+                </li>
+                <li>
+                    <input id="98017" type="checkbox" /><label for="98017">:indeterminate</label>
+                </li>
+                <li>
+                    <input id="98018" type="checkbox" /><label for="98018">:in-range</label>
+                </li>
+                <li>
+                    <input id="98019" type="checkbox" /><label for="98019">:Invalid</label>
+                </li>
+                <li>
+                    <input id="98020" type="checkbox" /><label for="98020">:lang()</label>
+                </li>
+                <li>
+                    <input id="98021" type="checkbox" /><label for="98021">:last-child</label>
+                </li>
+                <li>
+                    <input checked id="98022" type="checkbox" /><label for="98022">:last-of-type</label>
+                </li>
+                <li>
+                    <input id="98023" type="checkbox" /><label for="98023">:left</label>
+                </li>
+                <li>
+                    <input id="98024" type="checkbox" /><label for="98024">:link</label>
+                </li>
+                <li>
+                    <input id="98025" type="checkbox" /><label for="98025">:not()</label>
+                </li>
+                <li>
+                    <input checked id="98026" type="checkbox" /><label for="98026">:nth-child</label>
+                </li>
+                <li>
+                    <input id="a1" type="checkbox" /><label for="a1">:nth-last-child</label>
+                </li>
+                <li>
+                    <input id="a2" type="checkbox" /><label for="a2">:nth-last-of-type()</label>
+                </li>
+                <li>
+                    <input checked id="a3" type="checkbox" /><label for="a3">:nth-of-type()</label>
+                </li>
+                <li>
+                    <input id="a4" type="checkbox" /><label for="a4">:only-child</label>
+                </li>
+                <li>
+                    <input id="a5" type="checkbox" /><label for="a5">:only-of-type</label>
+                </li>
+                <li>
+                    <input id="a6" type="checkbox" /><label for="a6">:optional</label>
+                </li>
+                <li>
+                    <input id="a7" type="checkbox" /><label for="a7">:out-of-range</label>
+                </li>
+                <li>
+                    <input id="a8" type="checkbox" /><label for="a8">:read-only</label>
+                </li>
+                <li>
+                    <input id="a9" type="checkbox" /><label for="a9">:read-write</label>
+                </li>
+                <li>
+                    <input checked id="a10" type="checkbox" /><label for="a10">:required</label>
+                </li>
+                <li>
+                    <input id="a11" type="checkbox" /><label for="a11">:right</label>
+                </li>
+                <li>
+                    <input checked id="a12" type="checkbox" /><label for="a12">:root</label>
+                </li>
+                <li>
+                    <input id="a13" type="checkbox" /><label for="a13">:scope</label>
+                </li>
+                <li>
+                    <input id="a14" type="checkbox" /><label for="a14">:target</label>
+                </li>
+                <li>
+                    <input id="a15" type="checkbox" /><label for="a15">:valid</label>
+                </li>
+                <li>
+                    <input id="a16" type="checkbox" /><label for="a16">:visited</label>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <input checked id="b1" type="checkbox" /><label for="b1">::after</label>
+                </li>
+                <li>
+                    <input checked id="b2" type="checkbox" /><label for="b2">::before</label>
+                </li>
+                <li>
+                    <input checked id="b3" type="checkbox" /><label for="b3">::first-letter</label>
+                </li>
+                <li>
+                    <input id="b4" type="checkbox" /><label for="b4">::first-line</label>
+                </li>
+                <li>
+                    <input id="b5" type="checkbox" /><label for="b5">::gphoto_adsmar-error</label>
+                </li>
+                <li>
+                    <input id="b6" type="checkbox" /><label for="b6">::marker</label>
+                </li>
+                <li>
+                    <input id="b7" type="checkbox" /><label for="b7">::selection</label>
+                </li>
+                <li>
+                    <input id="b8" type="checkbox" /><label for="b8">::spelling-error</label>
+                </li>
+            </ul>
+        </form>
     </main>
     <footer class="footer">
         <div class="footer__wrapper">
             <img src="./assets/Vector 9.svg" alt="фон" class="footer__img">
             <div class="footer__imgs">
                 <p class="footer__dates">2015 — 2023 г.</p>
-                <img src="./assets/logo_footer.svg" alt="лого" class="footer__logo">
+                <img src="./assets/logo_footer.svg" alt="лого" class="footer__logo2">
             </div>
         </div>
     </footer>

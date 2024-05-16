@@ -14,6 +14,7 @@
     display: flex;
     justify-content: space-between;
     background-image: url("../assets/background_header.svg");
+    width: 39.2rem;
     background-repeat: no-repeat;
     background-position-x: 50%;
     margin: 0;
@@ -22,4 +23,52 @@
 .header__burger {
     background: none;
     border: none;
+}
+
+.header__contacts {
+    display: none;
+}
+
+@media (min-width: 39.2rem) and (max-width: 192rem){
+    .header__wrapper {
+        @include mixins.wrapper-dt;
+        background-image: url("/assets/header_dt.svg");
+        background-size: cover;
+        max-width: 192rem;
+        height: 16.1rem;
+        width: 100%;
+    }
+
+    .header__burger {
+        display: none;
+    }
+
+    .header__contacts {
+        display: flex;
+        margin: 1rem 36rem 12.8rem 36.8rem;
+    }
+
+    .header__link {
+        margin-left: 2.4rem;
+        text-decoration: none;
+        color: variables.$blue;
+        font-size: 1.6rem;
+        font-weight: 500;
+        line-height: 1.9rem;
+        white-space: nowrap;
+    }
+
+    a[class*="header__link"]:hover {
+        border-bottom: 0.3rem solid;
+        border-color: variables.$orange;
+    }
+
+    #number {
+        color: variables.$orange;
+    }
+
+    .logo__image {
+        position: absolute;
+        left: 23.2rem;
+    }
 }

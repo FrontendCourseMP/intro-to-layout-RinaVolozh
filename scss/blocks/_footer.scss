@@ -7,25 +7,59 @@
 
 .footer__wrapper {
     @include mixins.wrapper-mb;
+    margin: 0 auto;
+    max-width: 40rem;
 }
 
 .footer__dates {
     font-size: 1.6rem;
     font-weight: 400;
     color: variables.$greysoft;
-    margin-left: 2.4rem;
-    margin-top: 2rem;
-
 }
 
 .footer__img {
     margin-left: 2.4rem;
     margin-right: 2.4rem;
-    margin-top: 4rem;
 }
 
-.logo__image {
+.footer__logo {
     width: 10.1rem;
-    margin-bottom: 3.6rem;
-    margin-left: 26.5rem;
+}
+
+.footer__imgs {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem 2.4rem 3.6rem 2.4rem;
+    gap: 13rem;
+}
+
+@media (min-width: 39.2rem) and (max-width: 192rem){
+    
+    .footer__wrapper {
+        @include mixins.wrapper-dt;
+    }
+
+    .footer__dates {
+        width: fit-content;
+        margin-top: 2rem;
+        margin-left: 35.9rem;
+        position: absolute;
+    }
+
+    .footer__logo {
+        width: 16.9rem;
+        margin-left: 139rem;
+        margin-bottom: 3rem;
+    }
+
+    .footer__img {
+        display: none;
+    }
+
+    .footer__imgs {
+        display: block;
+        padding: 0rem;
+        gap: 0rem;
+    }
+
 }

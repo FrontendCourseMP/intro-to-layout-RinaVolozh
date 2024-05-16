@@ -48,3 +48,43 @@
     position: absolute;
     right: 27.2rem;
 }
+
+@media (min-width: 39.2rem) and (max-width: 192rem){
+    .contacts__wrapper {
+        @include mixins.wrapper-dt;
+        background-image: url(/assets/graphic_hero.svg);
+        background-position-x: center;
+        padding: 0;
+        height: 9rem;
+        position: relative;
+        bottom: 9rem;
+    }
+
+    .contacts__list{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .contacts__item {
+        margin: 0rem;
+        &:not(:first-child) {
+            margin-top: 0rem;
+            margin-left: 10rem;
+            margin-top: 5rem;
+        }
+        margin-left: 78rem;
+        margin-top: 5rem;
+    }
+
+    .contacts__image {
+        position: absolute;
+        right: 0rem;
+        left: 100rem;
+    }
+
+    #mail {
+        position: absolute;
+        left: 70rem;
+        top: 4.5rem;
+    }
+}

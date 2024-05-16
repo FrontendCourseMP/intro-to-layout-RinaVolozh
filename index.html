@@ -11,7 +11,7 @@
 <body>
     <header class="header">
         <div class="header__wrapper">
-            <a href="#" class="header__logo logo">
+            <a href="#главная" class="header__logo logo">
                 <svg xmlns="http://www.w3.org/2000/svg" width="172" height="46" viewBox="0 0 172 46" fill="none" class="logo__image">
                     <g clip-path="url(#clip0_114_654)">
                         <path
@@ -63,6 +63,7 @@
                         </clipPath>
                     </defs>
                 </svg>
+                <span class="visually-hidden">На главную страницу</span>
             </a>
             <button class="header__burger">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none" class="menu__image">
@@ -76,33 +77,72 @@
                         </clipPath>
                     </defs>
                 </svg>
+                <span class="visually-hidden">Меню</span>
             </button>
+            <div class="header__contacts">
+                <a href="#О_компании" class="header__link"><span>О компании</span></a>
+                <a href="#Наши_преимущества" class="header__link"><span>Наши преимущества</span></a>
+                <a href="#Заказчики" class="header__link"><span>Заказчики</span></a>
+                <a href="#Объекты" class="header__link"><span>Объекты</span></a>
+                <a href="#Контакты" class="header__link"><span>Контакты</span></a>
+                <a href="./form.html" class="header__link" id="number"><span>8 800 600-15-05</span></a>
+            </div>
         </div>
     </header>
-    <main class="main">
+    <main class="main" id="главная">
         <section class="main__hero hero">
             <div class="hero__wrapper">
-                <h2 class="hero__title">
-                    Аренда специализированных насосных станций
-                    <span class="hero__title hero__title--small">
-                        для водопонижения и водоотведения
-                    </span>
-                </h2>
-                <img src="./assets/Bump_1@1x.png" alt="" class="hero__image">
+                <div class="hero__container">
+                    <button type="button" class="circlel"><img src="./assets/circlel.svg" alt="кнопка влево"><span class="visually-hidden">Переключение на левую картинку</span></button>
+                    <h2 class="hero__title">
+                        Аренда специализированных насосных станций
+                        <span class="hero__title hero__title--small">
+                            для водопонижения и водоотведения
+                        </span>
+                    </h2>
+                    <img src="./assets/Bump1.svg" alt="насос" class="hero__image">
+                    <button type="button" class="circler"><img src="./assets/circler.svg" alt="кнопка вправо"><span class="visually-hidden">Переключение на правую картинку</span></button>
+                </div>
                 <a href="#" class="hero__callback">Заказать звонок</a>
+                <div class="item-card__slider slider">
+                    <div class="slider__controls controls">
+                        <ul class="controls__list">
+                            <li class="controls__item">
+                                <label class="controls__label">
+                                    <input type="radio" name="slide" class="visually-hidden controls__input controls__input--1" checked>
+                                    <span class="visually-hidden">Переключить на изображение 1</span>
+                                    <span class="controls__visible-selector"></span>
+                                </label>
+                            </li>
+                            <li class="controls__item">
+                                <label class="controls__label">
+                                    <input type="radio" name="slide" class="visually-hidden controls__input controls__input--2">
+                                    <span class="visually-hidden">Переключить на изображение 2</span>
+                                    <span class="controls__visible-selector"></span>
+                                </label>
+                            </li>
+                            <li class="controls__item">
+                                <label class="controls__label">
+                                    <input type="radio" name="slide" class="visually-hidden controls__input controls__input--3">
+                                    <span class="visually-hidden">Переключить на изображение 3</span>
+                                    <span class="controls__visible-selector"></span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
             </div>
         </section>
         <section class="main__contacts contacts">
             <div class="contacts__wrapper">
                 <ul class="contacts__list">
                     <li class="contacts__item">
-                        <img src="./assets/mail.svg" alt="" class="contacts__image">
+                        <img src="./assets/mail.svg" alt="значок почта" class="contacts__image" id="mail">
                         <h3 class="contacts__subtitle">Cвязь с нами</h3>
                         <a href="tel:+7 800 600-15-05" class="contacts__link">8 800 600-15-05</a>
                         <a href="mailto:office@sahara-group.ru" class="contacts__link">office@sahara-group.ru</a>
                     </li>
                     <li class="contacts__item">
-                        <img src="./assets/pin.svg" alt="" class="contacts__image">
+                        <img src="./assets/pin.svg" alt="значок геолокация" class="contacts__image">
                         <h3 class="contacts__subtitle">Наша локация</h3>
                         <p class="contacts__text">Ленинградская область,
                             Новоприозерское ш.11 км. Трасса А-121</p>
@@ -110,7 +150,7 @@
                 </ul>
             </div>
         </section>
-        <section class="main__about about">
+        <section class="main__about about" id="О_компании">
             <div class="about__wrapper">
                 <h2 class="about__title">О компании</h2>
                 <p class="about__text">Уже более 8 лет специалисты компании Сахара Груп решают задачи любой сложности
@@ -123,7 +163,7 @@
                     минимальном расходе топлива, а также низким уровнем шума (менее 48 дБ), что позволяет использовать
                     их в городских условиях</p>
                 <ul class="about__list">
-                    <li class="about__item">
+                    <li class="about__item" id="item">
                         <h3 class="about__subtitle">
                             <svg width="180" height="107" viewBox="0 0 180 107" fill="none" xmlns="http://www.w3.org/2000/svg" class="about__number">
                                 <path
@@ -181,7 +221,7 @@
                         </h3>
                     </li>
                 </ul>
-                <img src="./assets/background_2.jpg" alt="" class="about__image">
+                <img src="./assets/background_2.jpg" alt="фон насос" class="about__image">
             </div>
         </section>
         <section class="main__catalog catalog">
@@ -228,7 +268,8 @@
                 <p class="item-card__text">Данный насос имеет компактный корпус и низкий уровень шума, благодаря чему
                     его можно использовать даже в густонаселенных районах крупных городов.</p>
                 <div class="item-card__slider slider">
-                    <div class="slider__controls controls">
+                    <button type="button" class="circlel__item-card"><img src="./assets/circlel.svg" alt="кнопка влево"><span class="visually-hidden">Переключение на левую картинку</span></button>
+                    <div class="slider__controls controls" id="item-card__controls">
                         <ul class="controls__list">
                             <li class="controls__item">
                                 <label class="controls__label">
@@ -254,52 +295,54 @@
                         </ul>
                     </div>
                     <div class="slider__display">
-                        <img src="./assets/Bump_2@1x.jpg" alt="" class="slider__image slider__image--1">
-                        <img src="./assets/Bump_2@1x.jpg" alt="" class="slider__image slider__image--2">
-                        <img src="./assets/Bump_2@1x.jpg" alt="" class="slider__image slider__image--3">
+                        <img src="./assets/Bump_2@1x.jpg" alt="насос" class="slider__image slider__image--1">
+                        <img src="./assets/Bump_2@1x.jpg" alt="насос" class="slider__image slider__image--2">
+                        <img src="./assets/Bump_2@1x.jpg" alt="насос" class="slider__image slider__image--3">
                     </div>
+                    <button type="button" class="circler__item-card"><img src="./assets/circler.svg" alt="кнопка влево"><span class="visually-hidden">Переключение на левую картинку</span></button>
                 </div>
             </div>
         </section>
         <section class="main__benefits benefits">
             <div class="benefits__wrapper">
-                <h2 class="benefits__title">Наши преимущества</h2>
+                <h2 class="benefits__title" id="Наши_преимущества">Наши преимущества</h2>
                 <ol class="benefits__list">
                     <li class="benefits__item" id="benefits">
-                        <img src="./assets/truck.svg" class="benefits__image" alt="">
+                        <img src="./assets/truck.svg" class="benefits__image" alt="картинка грузовик">
                         <h3 class="benefits__subtitle">Работаем по всей России</h3>
                         <p class="benefits__text">Мы готовы произвести работы в любой точке России в максимально сжатые
                             сроки. Мы ценим время заказчика и организуем доставку на объект самостоятельно вне
                             зависимости от количества оборудования.</p>
                     </li>
                     <li class="benefits__item">
-                        <img src="./assets/cert.svg" class="benefits__image1" alt="">
+                        <img src="./assets/cert.svg" class="benefits__image1" alt="картинка сертификат">
                         <h3 class="benefits__subtitle">Лучшее в классе оборудование</h3>
                         <p class="benefits__text">Мы используем только насосы BBA pumps при проведении работ. Все наши
                             установки выпущены не позже 2017 года, в идеальном техническом состоянии.</p>
                     </li>
                     <li class="benefits__item">
-                        <img src="./assets/dialog.svg" class="benefits__image2" alt="">
+                        <img src="./assets/dialog.svg" class="benefits__image2" alt="картинка диалог">
                         <h3 class="benefits__subtitle">Бесплатный выезд и консультация</h3>
                         <p class="benefits__text">Бесплатный выезд и консультации в любой точке России, постоянная
                             поддержка и полное сопровождение работ на каждом этапе оказываемых услуг.</p>
                     </li>
                 </ol>
-                <img src="./assets/graphic.svg" alt="" class="benefits__graphic">
+                <img src="./assets/graphic.svg" alt="фон" class="benefits__graphic">
+                <img src="./assets/graphic_benefits_dt.svg" alt="фон" class="benefits__graphicdt">
             </div>
         </section>
-        <div class="section main__clients clients">
+        <div class="section main__clients clients" id="Заказчики">
             <div class="clients__wrapper">
                 <h2 class="clients__title">Заказчики</h2>
                 <ul class="clients__list">
                     <li class="clients__item" id="clients">
-                        <img src="./assets/Aarsleff@1x.jpg" alt="" class="clients__image">
+                        <img src="./assets/Aarsleff@1x.jpg" alt="Aarsleff" class="clients__image">
                     </li>
                     <li class="clients__item">
-                        <img src="./assets/Megameid@1x.jpg" alt="" class="clients__image">
+                        <img src="./assets/Megameid@1x.jpg" alt="Megameid" class="clients__image">
                     </li>
                     <li class="clients__item">
-                        <img src="./assets/Tehnomet@1x.jpg" alt="" class="clients__image">
+                        <img src="./assets/Tehnomet@1x.jpg" alt="Tehnomet" class="clients__image">
                     </li>
                     <li class="clients__item">
                         <svg width="221" height="48" viewBox="0 0 221 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="clients__image">
@@ -366,6 +409,7 @@
                                 </clipPath>
                             </defs>
                         </svg>
+                        <span class="visually-hidden">СТИС</span>
                     </li>
                 </ul>
             </div>
@@ -393,11 +437,11 @@
                 </form>
             </div>
         </section>
-        <section class="main__places places">
+        <section class="main__places places" id="Объекты">
             <div class="places__wrapper">
-                <img src="./assets/places_graphic.svg" alt="" class="places__graphic">
+                <img src="./assets/places_graphic.svg" alt="фон" class="places__graphic">
                 <h2 class="places__title">Наши объекты</h2>
-                <svg width="362" height="188" viewBox="0 0 362 188" fill="none" xmlns="http://www.w3.org/2000/svg" class="places__map">
+                <svg role="карта России" width="362" height="188" viewBox="0 0 362 188" fill="none" xmlns="http://www.w3.org/2000/svg" class="places__map">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M287.575 37.24L287.277 38.0826L288.021 38.5779L288.862 38.0826L288.565 37.0425L287.575 37.24Z" fill="#D8D8D8"/>
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M216.695 59.7369L218.053 60.8154L218.676 59.8317L218.884 59.0184L218.129 58.5457L217.223 58.4131L216.695 59.7369Z" fill="#D8D8D8"/>
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M214.052 62.9337L214.486 63.4817L215.995 62.5548L215.656 61.6473L214.712 61.6094L214.184 62.4226L214.052 62.9337Z" fill="#D8D8D8"/>
@@ -555,7 +599,8 @@
                     <path d="M58.6113 58.9528C58.6113 59.8511 57.8824 60.58 56.9824 60.58C56.0824 60.58 55.3535 59.8511 55.3535 58.9528C55.3535 58.0546 56.0824 57.3257 56.9824 57.3257C57.8824 57.3257 58.6113 58.0546 58.6113 58.9528Z" fill="#F9572B" stroke="white"/>
                     <path d="M54.2949 85.8689C54.2949 86.7671 53.566 87.496 52.666 87.496C51.766 87.496 51.0371 86.7671 51.0371 85.8689C51.0371 84.9706 51.766 84.2417 52.666 84.2417C53.566 84.2417 54.2949 84.9706 54.2949 85.8689Z" fill="#F9572B" stroke="white"/>
                     <path d="M19.9995 121.044C19.9995 121.942 19.2706 122.671 18.3706 122.671C17.4706 122.671 16.7417 121.942 16.7417 121.044C16.7417 120.146 17.4706 119.417 18.3706 119.417C19.2706 119.417 19.9995 120.146 19.9995 121.044Z" fill="#F9572B" stroke="white"/>
-                </svg>                    
+                </svg>
+                <img src="./assets/map_dt.svg" alt="карта России" class="places__mapdt">                  
                 <ul class="places__list">
                     <li class="places__item">Екатеринбург</li>
                     <li class="places__item">Казань</li>
@@ -568,20 +613,20 @@
         </section>
     </main>
     <footer class="footer">
-        <section class="references">
+        <section class="references" id="Контакты">
             <div class="references__wrapper">
                 <h2 class="references__title">Контакты</h2>
                 <div class="references__largebox">
                     <div class="references__orangebox">
                         <ul class="references__list">
                             <li class="references__item">
-                                <img src="./assets/email_2.svg" alt="иконка сообщения" class="references__image">
+                                <img src="./assets/email_2.svg" alt="значок почта" class="references__image">
                                 <h3 class="references__subtitle">Cвязь с нами</h3>
                                 <a href="tel:+7 800 600-15-05" class="references__link">8 800 600-15-05</a>
                                 <a href="mailto:office@sahara-group.ru" class="references__link">office@sahara-group.ru</a>
                             </li>
                             <li class="references__item">
-                                <img src="./assets/pin_2.svg" alt="иконка геолокации" class="references__image">
+                                <img src="./assets/pin_2.svg" alt="значок геолокация" class="references__image">
                                 <h3 class="references__subtitle">Наша локация</h3>
                                 <p class="references__text">Ленинградская область,</p>
                                 <p class="references__text">Новоприозерское ш.11 км.</p>
@@ -595,88 +640,39 @@
                             МСК.</p>
                     </div>
                     <div class="references__callback">
-                        <p class="callback__intro">Свяжитесь с нами удобным вам способом
-                            или оставьте заявку и наши специалисты позвонят вам</p>
-                        <form action="" class="callback__form">
-                            <label class="callback__label">
-                                <span class="callback__description">Ваше имя</span>
-                                <input type="text" class="callback__text-input">
-                            </label>
-                            <label class="callback__label">
-                                <span class="callback__description">Название компании</span>
-                                <input type="text" class="callback__text-input">
-                            </label>
-                            <label class="callback__label">
-                                <span class="callback__description">Телефон *</span>
-                                <input type="text" class="callback__text-input">
-                            </label>
-                            <p class="callback__text">Я даю свое согласие на обработку моей персональной информации в
-                                соответствии с политикой конфиденциальности</p>
-                            <label class="callback__label">
-                                <span class="callback__description">Комментарий</span>
-                                <textarea name="" cols="30" rows="10" class="callback__textarea"></textarea>
-                            </label>
-                            <button type="submit" class="callback__button2">Отправить</button>
-
-                        </form>
+                        <p class="callback__intro"><span class="text1">Свяжитесь с нами удобным вам способом
+                            или оставьте заявку и наши специалисты позвонят вам</span></p>
+                            <form action="" class="callback__form2">
+                                <label class="callback__label">
+                                    <span class="callback__description"><span class="text1">Ваше имя</span></span>
+                                    <input type="text" class="callback__text-input2">
+                                </label>
+                                <label class="callback__label2">
+                                    <span class="callback__description"><span class="text1">Название компании</span></span>
+                                    <input type="text" class="callback__text-input2">
+                                </label>
+                                <label class="callback__label">
+                                    <span class="callback__description"><span class="text1">Телефон *</span></span>
+                                    <input type="text" class="callback__text-input3">
+                                </label>
+                                <p class="callback__text2"><span class="text1">Я даю свое согласие на обработку моей персональной информации в
+                                    соответствии с политикой конфиденциальности</span></p>
+                                <label class="callback__label" id="comment">
+                                    <span class="callback__description"><span class="text1">Комментарий</span></span>
+                                    <textarea name="" cols="30" rows="10" class="callback__textarea"></textarea>
+                                </label>
+                                <button type="submit" class="callback__button2">Отправить</button>
+                            </form>
                     </div>
                 </div>
             </div>
         </section>
         <div class="footer__wrapper">
-            <img src="./assets/Vector 9.svg" alt="" class="footer__img">
-            <p class="footer__dates">2015 — 2023 г.</p>
-            <a href="#" class="footer__logo"> 
-                <svg width="101" height="28" viewBox="0 0 101 28" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo__image">
-                    <g opacity="0.6" clip-path="url(#clip0_117_1606)">
-                        <path
-                            d="M23.655 6.33727L17.553 2.79996V5.01809L22.6981 8.00116V20.0528L12.306 26.0787L1.91273 20.0528V8.00116L7.12696 4.97789V2.75977L0.956972 6.33727C0.365081 6.68076 0 7.31538 0 8.00116V20.0528C0 20.7398 0.365081 21.3732 0.956972 21.7167L11.349 27.7426C11.645 27.9143 11.9749 27.9996 12.306 27.9996C12.6371 27.9996 12.967 27.9143 13.263 27.7426L23.655 21.7167C24.2469 21.3732 24.612 20.7386 24.612 20.0528V8.00116C24.612 7.31417 24.2469 6.68076 23.655 6.33727Z"
-                            fill="white" />
-                        <path
-                            d="M10.6144 6.56423H13.9971V3.21939L16.1779 4.48375V2.26563L12.2712 0L8.43359 2.22421V4.44356L10.6144 3.17919V6.56423Z"
-                            fill="white" />
-                        <path
-                            d="M13.997 7.97266H10.6142C10.6142 13.3334 7.08106 14.3603 3.44238 14.3603V19.1546L12.3062 24.2937L21.17 19.1546V14.3603C16.6399 14.3603 13.9982 12.8377 13.9982 7.97266H13.997Z"
-                            fill="white" />
-                        <path d="M101 19.6455H81.9614V20.4141H101V19.6455Z" fill="white" />
-                        <path d="M51.7141 19.6455H32.6753V20.4141H51.7141V19.6455Z" fill="white" />
-                        <path
-                            d="M63.7622 6.27181H63.5487L63.5439 6.27668C63.5366 6.27668 63.5293 6.27668 63.5269 6.2779C63.3413 6.46305 61.5559 8.61905 61.4844 8.71284C61.6505 8.92966 62.5493 10.0016 62.6063 10.0503C62.6087 10.0466 62.6124 10.0442 62.6148 10.0405L62.6378 10.0673L65.8265 6.27059H65.6604C65.0745 6.25963 64.1843 6.26328 63.7634 6.27059L63.7622 6.27181Z"
-                            fill="white" />
-                        <path
-                            d="M58.2517 6.27207C57.7859 6.26476 56.7028 6.25989 56.2734 6.27207H56.1982L56.2007 6.2745C56.2007 6.2745 56.1995 6.2745 56.1982 6.2745C57.4026 7.74594 58.6446 9.18206 59.8527 10.6511C58.6374 12.1055 57.4172 13.5525 56.2031 15.0081C56.2043 15.0094 56.2067 15.0094 56.2079 15.0106L56.1982 15.0228H58.4748L60.9989 12.0178C61.6429 12.751 62.7976 14.1738 63.5193 15.0179C63.5278 15.0179 63.5362 15.0179 63.5435 15.0179L63.5472 15.0228H65.8238L58.4736 6.27207H58.2492H58.2517Z"
-                            fill="white" />
-                        <path
-                            d="M48.5244 6.27637L44.084 15.0234H46.2708L49.8185 8.03527L51.6888 11.7175H48.9319L48.0877 13.3814H52.533L53.3663 15.0234H55.5531L51.1127 6.27637H48.5244Z"
-                            fill="white" />
-                        <path
-                            d="M70.6621 6.27637L66.2217 15.0234H68.4085L71.9562 8.03527L73.8265 11.7175H71.0696L70.2254 13.3814H74.6707L75.504 15.0234H77.6908L73.2504 6.27637H70.6621Z"
-                            fill="white" />
-                        <path
-                            d="M93.9726 6.27637L89.5322 15.0234H91.7191L95.2668 8.03527L97.1359 11.7175H94.3802L93.5348 13.3814H97.98L98.8145 15.0234H101L96.5597 6.27637H93.9726Z"
-                            fill="white" />
-                        <path
-                            d="M89.0944 8.12905C89.0944 7.09977 88.2635 6.2666 87.2399 6.2666H79.1826V7.92441H86.557C86.9645 7.92441 87.2944 8.25573 87.2944 8.665V9.98905C87.2944 10.3983 86.9645 10.7296 86.557 10.7296H81.0104V8.8672H79.1826V15.0197H81.0104V12.3875H87.2411C88.266 12.3875 89.0956 11.5531 89.0956 10.525V8.13148L89.0944 8.12905Z"
-                            fill="white" />
-                        <path
-                            d="M41.0275 6.26758H34.6101C33.5415 6.26758 32.6743 7.13729 32.6743 8.21163V13.0779C32.6743 14.151 33.5403 15.0219 34.6101 15.0219H41.0275C41.8887 15.0219 42.5873 14.3203 42.5873 13.4555V11.8598H40.8444V12.8172C40.8444 13.1156 40.603 13.3568 40.307 13.3568H35.0528C34.7556 13.3568 34.5155 13.1144 34.5155 12.8172V8.46621C34.5155 8.16778 34.7569 7.9266 35.0528 7.9266H40.307C40.6042 7.9266 40.8444 8.169 40.8444 8.46621V9.27867H42.5873V7.83525C42.5873 6.97041 41.8887 6.2688 41.0275 6.2688V6.26758Z"
-                            fill="white" />
-                        <path d="M73.2041 17.9639V22.0944H74.0665V18.7459H77.6372V22.0944H78.5008V17.9639H73.2041Z" fill="white" />
-                        <path d="M55.1758 18.1161V18.7459V22.0944H56.0381V18.7459H58.9394V17.9639H55.1758V18.1161Z" fill="white" />
-                        <path
-                            d="M64.2228 17.9639H60.4204V18.7459H63.9002C64.0918 18.7459 64.2483 18.9018 64.2483 19.0955V19.7203C64.2483 19.9128 64.0931 20.0699 63.9002 20.0699H61.2828V19.1905H60.4204V22.0944H61.2828V20.8519H64.2228C64.7068 20.8519 65.0985 20.4585 65.0985 19.9725V18.8433C65.0985 18.3573 64.7068 17.9639 64.2228 17.9639Z"
-                            fill="white" />
-                        <path
-                            d="M70.5504 17.9663V19.7605H67.7753C67.6758 19.7605 67.5958 19.6801 67.5958 19.5803V17.9639H66.7334V19.8117C66.7334 20.21 67.0548 20.5316 67.4502 20.5316H70.5504V21.1309C70.5504 21.2308 70.4703 21.3112 70.3709 21.3112H66.7334C66.7334 21.7436 67.0827 22.0932 67.5133 22.0932H70.6341C71.0646 22.0932 71.4139 21.7424 71.4139 21.3112V17.9663H70.5516H70.5504Z"
-                            fill="white" />
-                    </g>
-                    <defs>
-                        <clipPath id="clip0_117_1606">
-                            <rect width="101" height="28" fill="white" />
-                        </clipPath>
-                    </defs>
-                </svg>
-            </a>
+            <img src="./assets/Vector 9.svg" alt="фон" class="footer__img">
+            <div class="footer__imgs">
+                <p class="footer__dates">2015 — 2023 г.</p>
+                <a href="./grid.html"><img src="./assets/logo_footer.svg" alt="лого" class="footer__logo"></a>
+            </div>
         </div>
     </footer>
 </body>

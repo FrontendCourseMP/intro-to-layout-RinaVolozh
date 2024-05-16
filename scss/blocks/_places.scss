@@ -37,3 +37,35 @@
     left: -4rem;
     margin-top: -10rem;
 }
+
+.places__mapdt {
+    display: none;
+}
+
+@media (min-width: 39.2rem) and (max-width: 192rem){
+    .places__wrapper {
+        @include mixins.wrapper-dt;
+        padding-bottom: 0rem;
+    }
+
+    .places__graphic {
+        width: 192rem;
+        position: absolute;
+        left: -1.7rem;
+        margin-top: -22rem;
+    }
+
+    .places__map {
+        display: none;
+    }
+
+    .places__mapdt {
+        display: block;
+        margin-left: 37rem;
+        margin-top: 7.3rem;
+    }
+
+    .places__list {
+        display: none;
+    }
+}

@@ -26,3 +26,21 @@
 #clients {
     padding-top: 7.5rem;
   }
+
+  @media (min-width: 39.2rem) and (max-width: 192rem){
+    .clients__wrapper {
+        @include mixins.wrapper-dt;
+    }
+
+    #clients {
+        padding-top: 0rem;
+      }
+
+    .clients__list {
+        flex-direction: row;
+        margin-left: 37.9rem;
+        padding-top: 9rem;
+    }
+
+
+  }

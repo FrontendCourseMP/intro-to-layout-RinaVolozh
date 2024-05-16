@@ -83,3 +83,59 @@
     z-index: -1;
     margin-top: -8rem;
 }
+
+.benefits__graphicdt {
+    display: none;
+}
+
+@media (min-width: 39.2rem) and (max-width: 192rem){
+    .benefits__wrapper {
+        @include mixins.wrapper-dt;
+        padding: 5rem 36rem 7.6rem 36rem;
+    }
+
+    .benefits__title {
+        text-wrap: nowrap;
+        padding: 6rem 0 0 0;
+        margin-bottom: 8rem;
+        
+        &::before {
+            position: absolute;
+            bottom: -3.2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: variables.$orange;
+        }
+    }
+
+    .benefits__list {
+        position: absolute;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        gap: 2.4rem;
+        padding-right: 3.6rem;
+        padding-left: 3.6rem;
+        background-image: none;
+    }
+    
+    .benefits__item {
+        width: 38.4rem;
+        height: 44.5rem;
+        padding: 3.2rem 3.2rem 7.8rem 3.2rem;
+        border-radius: 0.8rem;
+        background-color: variables.$white;
+    }
+
+    #benefits {
+        margin-top: 0rem;
+    }
+
+    .benefits__graphicdt {
+        display: block;
+        position: relative;
+        z-index: -1;
+        margin-top: 14rem;
+        right: 37.8rem;
+    }
+}

@@ -49,3 +49,57 @@
     font-size: 1.6rem;
     font-weight: 900;
 }
+
+.about__image {
+    width: 35.1rem;
+}
+
+@media (min-width: 39.2rem) and (max-width: 192rem){
+    .about__wrapper {
+        @include mixins.wrapper-dt;
+        padding: 8rem 0 4rem 0;
+    }
+
+    .about__title {
+        @include mixins.title;
+        text-align: left;
+        margin-left: 35.8rem;
+        width: 80%;
+        &::before {
+            left: 3.2%;
+        }
+    }
+
+    .about__text {
+        margin: 0;
+        margin-left: 36rem; 
+        margin-right: 92.9rem;
+        margin-top: 2rem;
+    
+    }
+
+    .about__list {
+        display: flex;
+        margin-top: 0rem;
+        margin-left: 36rem;
+    }
+
+    .about__item {
+        width: 16rem;
+        margin-left: 8rem;
+        margin-top: 4rem;
+        margin-right: 0rem;
+        margin-bottom: 0rem;
+    }
+
+    #item {
+        margin-left: 0rem;
+    }
+    
+    .about__image {
+        width: 80.7rem;
+        position: absolute;
+        top: 100rem;
+        left: 109.5rem;
+    }
+}

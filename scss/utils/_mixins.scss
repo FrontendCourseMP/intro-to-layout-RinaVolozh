@@ -9,6 +9,8 @@
 
 @mixin wrapper-dt {
     max-width: variables.$desktop-size;
+    width: 100%;
+    margin: 0 auto;
 }
 
 @mixin title {

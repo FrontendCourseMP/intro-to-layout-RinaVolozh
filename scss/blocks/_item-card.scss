@@ -30,3 +30,59 @@
 .slider__image {
     margin-left: 2.5rem;
 }
+
+.circlel__item-card {
+    display: none;
+}
+
+.circler__item-card {
+    display: none;
+}
+
+@media (min-width: 39.2rem) and (max-width: 192rem){
+    .item-card {
+        @include mixins.wrapper-dt;
+        padding: 0;
+    }
+
+    .item-card__title {
+        margin-top: 12.9rem;
+        margin-left: 36rem;
+    }
+
+    .item-card__text {
+        margin-top: 2.4rem;
+        margin-left: 36rem;
+        margin-right: 0rem;
+        width: 50.8rem;
+    }
+
+    #item-card__controls {
+        position: absolute;
+        margin-left: 120rem;
+        bottom: -148rem;
+    }
+
+    .item-card__slider {
+        margin-top: 0rem;
+    }
+
+    .circlel__item-card {
+        display: block;
+        border: none;
+        background: transparent;
+        position: absolute;
+        left: 96rem;
+        bottom: -130rem;
+    }
+
+    .circler__item-card {
+        display: none;
+        display: block;
+        border: none;
+        background: transparent;
+        position: absolute;
+        left: 157rem;
+        bottom: -130rem;
+    }
+}

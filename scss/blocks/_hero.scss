@@ -49,3 +49,72 @@
     font-weight: 500;
     max-width: 20.7rem;
 }
+
+.circlel {
+    display: none;
+}
+
+.circler {
+    display: none;
+}
+
+@media (min-width: 39.2rem) and (max-width: 192rem){
+    .hero {
+        background-image: url("../assets/background_1.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: 90%;
+    }
+    
+    .hero__wrapper {
+        @include mixins.wrapper-dt;
+    }
+
+    .hero__container {
+        display: flex;
+        margin-left: 20rem;
+    }
+
+    .hero__title {
+        font-size: 4.8rem;
+        text-align: left;
+        width: 51.5rem;
+        margin-top: 12rem;
+        &--small {
+            position: relative;
+            bottom: 10rem;
+            font-size: 2.4rem;
+            font-weight: 700;
+        }
+    }
+
+    .hero__image {
+        width: 59rem;
+        height: 39rem;
+    }
+
+    .circlel {
+        display: block;
+        border: none;
+        background: transparent;
+    }
+
+    .circler {
+        display: block;
+        border: none;
+        background: transparent;
+    }
+
+    .hero__callback {
+        position: relative;
+        right: 56rem;
+        bottom: 8rem;
+    }
+
+    .controls__list {
+        margin-top: 0rem;
+        position: relative;
+        bottom: 4rem;
+    }
+    
+}

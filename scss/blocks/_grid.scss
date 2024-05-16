@@ -1,0 +1,215 @@
+@use "../utils/variables";
+@use "../utils/mixins";
+
+main {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    padding: 100px 0;
+}
+
+.main__pit {
+    margin: auto;
+}
+
+.pit {
+    width: 30rem;
+    height: 30rem;
+    background: variables.$white;
+    display: grid;
+    border-radius: 1rem;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    grid-template-rows: repeat(6, minmax(0, 1fr));
+    margin: 0 auto;
+}
+
+.line {
+    box-sizing: content-box;
+    border-radius: 0;
+    border: 0.2rem solid variables.$black;
+}
+
+.ln1 {
+    border-radius: 1rem 0 0 0;
+    grid-column: span 2 / span 2;
+    background-color: red;
+}
+
+.ln2 {
+    column-span: 1;
+    background-color: variables.$white;
+}
+
+.ln3 {
+    column-span: 1;
+    background-color: variables.$white;
+}
+
+.ln4 {
+    border-radius: 0 1rem 0 0;
+    column-span: 1;
+    background-color: variables.$white;
+}
+
+.ln5 {
+    grid-column: span 2 / span 2;
+    background-color: variables.$white;
+}
+
+.ln6 {
+    grid-column: span 2 / span 2;
+    background-color: variables.$white;
+}
+
+.ln7 {
+    grid-row: span 2 / span 2;
+    background-color: variables.$white;
+}
+
+.ln8 {
+    grid-column: span 2 / span 2;
+    background-color: variables.$white;
+}
+
+.ln9 {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.ln10 {
+    background: variables.$black;
+    grid-column: span 2;
+}
+
+.ln11 {
+    grid-row: span 2;
+    background-color: yellow;
+}
+
+.ln12 {
+    background-color: yellow;
+    grid-row: span 2;
+    border-radius: 0 0 0 1rem;
+}
+
+.ln13 {
+    background-color: variables.$white;
+    grid-row: span 2;
+}
+
+.ln14 {
+    grid-column: span 2;
+    grid-row: span 2;
+    background-color: red;
+}
+
+.ln15 {
+    background-color: variables.$white;
+    border-radius: 0 0 1rem 0;
+}
+
+.graphics {
+    display: grid;
+    margin: 10rem auto;
+    width: 72rem;
+    height: 72rem;
+    grid-template-areas:
+        "sidebar g1_1 g1_1 g1_1 g1_1 g1_1 g1_1"
+        "sidebar g2_1 g2_1 g2_2 g2_2 g2_3 g2_3"
+        "sidebar g3_1 g3_1 g3_1 g3_2 g3_2 g3_2"
+    ;
+    grid-template-columns: 20rem repeat(6, 7rem);
+    grid-template-rows: repeat(3, 20rem);
+    gap: 1rem 1rem;
+    place-items: center;
+    border: 0.5rem solid variables.$orange;
+    overflow-x: hidden;
+}
+
+.graphics>div:first-of-type {
+    height: 3fr;
+    padding: 1.5rem;
+    padding-right: none;
+
+}
+
+.graphics>div:not(:first-of-type) {
+    height: 100%;
+}
+
+.graphics>div:not(.sidebar)>svg {
+    border-radius: 1rem;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    font-size: 2rem;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: underline;
+    text-decoration-color: variables.$white;
+}
+
+.sidebar>a {
+    color: variables.$orange;
+    margin: 1rem 0;
+}
+
+.g1_1 {
+    grid-area: g1_1;
+}
+
+.g2_1 {
+    grid-area: g2_1;
+}
+
+.g2_2 {
+    grid-area: g2_2;
+}
+
+.g2_3 {
+    grid-area: g2_3;
+}
+
+.g3_1 {
+    grid-area: g3_1;
+}
+
+.g3_2 {
+    grid-area: g3_2;
+}
+
+.RAM {
+    margin: 10rem 10rem;
+    display: grid;
+    place-items: center;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+}
+
+.RAM>div {
+    display: grid;
+    grid-template: "a" 1fr;
+    width: 50%;
+    aspect-ratio: 1/1;
+    background-color: variables.$orange;
+}
+
+.RAM>div>img {
+    grid-area: a;
+    max-width: 100%;
+}
+
+.RAM>div>a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    grid-area: a;
+    font-size: 2.4rem;
+    font-weight: 600;
+    background-color: transparent;
+    color: variables.$blue;
+}

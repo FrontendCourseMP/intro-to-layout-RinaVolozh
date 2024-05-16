@@ -2215,4 +2215,87 @@ main form:last-of-type input:checked + label {
   width: 16.9rem;
   margin-left: 139rem;
   margin-bottom: 3rem;
+}
+
+@keyframes runningline {
+  0% {
+    transform: translateX(60rem);
+  }
+  100% {
+    transform: translateX(-57rem);
+  }
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.imgline__wrapper {
+  width: 65rem;
+  overflow: hidden;
+  border: 1rem solid #1A4D70;
+}
+
+.animline {
+  width: 105rem;
+  max-height: 25rem;
+}
+
+.animline_images {
+  animation: runningline 1.5s linear infinite;
+  overflow: hidden;
+  width: 150px;
+}
+
+.layer1 {
+  animation-delay: 110ms;
+}
+
+.layer2 {
+  animation-delay: 260ms;
+}
+
+.layer3 {
+  animation-delay: 410ms;
+}
+
+.flipimg {
+  background-color: transparent;
+  width: 40rem;
+  height: 40rem;
+  perspective: 100rem;
+  margin-top: 2rem;
+  margin-left: 14rem;
+}
+
+.flipimg_main {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.7019607843);
+}
+
+.flipimg:hover .flipimg_main {
+  transform: rotateY(180deg);
+}
+
+.flipimg_front,
+.flipimg_back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flipimg_back {
+  transform: rotateY(180deg);
+}
+
+.flipimg_back {
+  transform: rotateY(180deg);
 }/*# sourceMappingURL=style.css.map */
